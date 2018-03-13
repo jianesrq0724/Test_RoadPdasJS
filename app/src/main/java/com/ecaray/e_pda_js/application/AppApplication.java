@@ -2,13 +2,15 @@ package com.ecaray.e_pda_js.application;
 
 import android.app.Application;
 
+import com.ecaray.basicres.base.BaseApplication;
+
 /**
  * @author Carl
  * @version 1.0
  * @since 2018/3/11
  */
 
-public class AppApplication extends Application {
+public class AppApplication extends BaseApplication {
 
     @Override
     public void onCreate() {

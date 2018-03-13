@@ -7,6 +7,7 @@ android {
         applicationId "com.mrzhang.androidcomponent"
         minSdkVersion 15
         targetSdkVersion 26
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,7 +31,7 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.mrzhang.component.application.AppApplication'
+    applicationName = 'com.ecaray.e_pda_js.application.AppApplication'
     isRegisterCompoAuto = true
 }
 

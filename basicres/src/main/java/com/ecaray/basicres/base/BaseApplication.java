@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.support.annotation.Nullable;
+import android.support.multidex.MultiDex;
 
 import com.ecaray.basicres.util.SPKeyUtils;
 import com.ecaray.basicres.util.SPUtils;
@@ -39,6 +40,11 @@ public abstract class BaseApplication extends Application {
     }
 
 
+    @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
+        MultiDex.install(context);
+    }
 
     /**
      * 添加Activity 到容器中

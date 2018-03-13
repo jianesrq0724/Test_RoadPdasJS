@@ -26,5 +26,6 @@ allprojects {
             url uri('./repo')
         }
         google()
+        maven { url 'https://dl.bintray.com/yichekeji/maven/' }
     }
 }
