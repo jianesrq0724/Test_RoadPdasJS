@@ -29,4 +29,14 @@ dependencies {
 
     //loading加载圈效果
     api 'com.wang.avi:library:2.1.3'
+
+    api 'com.github.goEcar:EcarNetFream:1.6.1'
+
+    //亿车工具类
+    api ('com.github.goEcar:EcarUtil:1.2.2'){
+        exclude group: "com.github.goEcar", module: "RxbusKim"
+    }
+
+    //时间工具类
+    api 'joda-time:joda-time:2.3'
 }
